@@ -291,13 +291,3 @@ GearGuard demonstrates real-world system design, enterprise-level UI, and scalab
 GearGuard – Keep your equipment running smoothly 🛠️🚀
 
 
----
-
-If you want next (very useful for hackathon/interview):
-- 📊 **PPT slides**
-- 🧠 **Backend API documentation**
-- 🧾 **SIH / college submission format**
-- 🏗️ **System architecture diagram**
-- 🎤 **Interview explanation**
-
-Just tell me 💪
