@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0a0a0a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0a0a0a] text-gray-100 antialiased;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+/* FullCalendar Dark Mode Custom Styles */
+/* FullCalendar Dark Mode Custom Styles */
+.fc {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --fc-page-bg-color: #0c0c0c;
+  /* Slightly different from main bg for contrast */
+  --fc-neutral-bg-color: #0c0c0c;
+  --fc-list-event-hover-bg-color: #1a1a1a;
+  --fc-theme-standard-border-color: #1f1f22;
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border-color: #1f1f22 !important;
+}
+
+/* Header Row Styling */
+.fc-col-header-cell {
+  background-color: #151515;
+  padding: 8px 0;
+}
+
+.fc-col-header-cell-cushion {
+  color: #9ca3af;
+  /* Gray-400 */
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none !important;
+}
+
+/* Day Cell Styling */
+.fc-daygrid-day-number {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  padding: 8px !important;
+  text-decoration: none !important;
+}
+
+/* Today Highlight (Circle number) */
+.fc-day-today {
+  background: transparent !important;
+}
+
+.fc-day-today .fc-daygrid-day-number {
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px;
+}
+
+/* Events */
+.fc-event {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  border: none !important;
+  background-color: #1e3a8a !important;
+  /* Dark blue bg */
+  color: #93c5fd !important;
+  /* Light blue text */
+  margin-bottom: 2px;
+}
+
+.fc-event:hover {
+  background-color: #2563eb !important;
+  color: white !important;
+}
+
+.fc-daygrid-day:hover {
+  background-color: rgba(255, 255, 255, 0.02) !important;
+}
+
+/* Hide the default toolbar title to match minimalist look */
+.fc-header-toolbar {
+  margin-bottom: 1.5em !important;
+}
+
+.fc-toolbar-title {
+  font-size: 1.25rem !important;
+  font-weight: 600;
+}
+
+/* Buttons */
+.fc-button {
+  background-color: #1f1f22 !important;
+  border-color: #1f1f22 !important;
+  color: #9ca3af !important;
+  font-weight: 500 !important;
+  text-transform: capitalize !important;
+  box-shadow: none !important;
+}
+
+.fc-button:hover {
+  background-color: #27272a !important;
+  border-color: #27272a !important;
+  color: white !important;
+}
+
+.fc-button-active {
+  background-color: #3b82f6 !important;
+  border-color: #3b82f6 !important;
+  color: white !important;
+}
+
+/* Hide standard password reveal button in Edge/Internet Explorer */
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
